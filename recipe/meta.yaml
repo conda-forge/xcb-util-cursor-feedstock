@@ -1,5 +1,5 @@
 {% set name = "xcb-util-cursor" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://xcb.freedesktop.org/dist/xcb-util-cursor-{{ version }}.tar.xz
-  sha256: 28dcfe90bcab7b3561abe0dd58eb6832aa9cc77cfe42fcdfa4ebe20d605231fb
+  sha256: 0caf99b0d60970f81ce41c7ba694e5eaaf833227bb2cbcdb2f6dc9666a663c57
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('xcb-util-cursor', max_pin='x.x') }}
@@ -43,4 +43,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - n-elie 
+    - n-elie
