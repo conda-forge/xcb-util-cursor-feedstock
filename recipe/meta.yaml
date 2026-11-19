@@ -10,7 +10,7 @@ source:
   sha256: fdeb8bd127873519be5cc70dcd0d3b5d33b667877200f9925a59fdcad8f7a933
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('xcb-util-cursor', max_pin='x.x') }}
